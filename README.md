@@ -4,15 +4,19 @@ Bootcamp Week 19: Homework
 
 # 19 Progressive Web Applications (PWA): Text Editor
 
-## Your Task
+## Table of Contents 
 
-As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.
+- [About Task](#about-task)
+- [User Story](#user-story)
+- [Getting Started](#getting-started)
+- [My Solution](#my-solution)
+- [Live](#live)
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+## About Task
+
+My task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
 
 To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
-
-You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
 
 ## User Story
 
@@ -22,7 +26,26 @@ I WANT to create notes or code snippets with or without an internet connection
 SO THAT I can reliably retrieve them for later use
 ```
 
-## Acceptance Criteria
+## Getting Started
+
+This application’s folder structure separates the Client-Server side Model. This application uses the following packages and dependencies: 
+- [webpack](https://webpack.js.org/) is used to compile JavaScript modules.
+- [@babel](https://babeljs.io/) is a JavaScript compiler.
+- [code-mirror-themes](https://www.npmjs.com/package/code-mirror-themes) is an online editor.
+- [idb](https://www.npmjs.com/package/idb) is a library that mostly mirrors the IndexedDB API.
+- [nodemon](https://www.npmjs.com/package/nodemon) is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+- [concurrently](https://www.npmjs.com/package/concurrently) helps to run multiple commands concurrently
+- [express](https://expressjs.com/) is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+
+If you need this app repo on your computer, it is required to install all necessary dependencies.
+
+- First clone the repository
+- `npm i`             // to install the dependencies at root directory
+- `nmp start`         // to invoke the application
+
+**Note**: This full-stack application is deployed to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
+
+## My Solution
 
 ```md
 GIVEN a text editor web application
@@ -52,8 +75,6 @@ WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
 
-## Mock-Up
-
 The following animation demonstrates the application functionality:
 
 ![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](./Assets/00-demo.gif)
@@ -70,21 +91,7 @@ The following image shows the application's IndexedDB storage:
 
 ![Demonstration of the finished Module 19 Challenge with a IndexedDB storage named 'jate' in the browser.](./Assets/03-idb-storage.png)
 
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
+### Technical Acceptance Criteria: 
 
 * Satisfies all of the above acceptance criteria plus the following:
 
@@ -104,43 +111,10 @@ This Challenge is graded based on the following criteria:
 
   * Can be installed as a Progressive Web Application
 
-### Deployment: 32%
+## Live
 
-* Application deployed to Heroku at live URL with build scripts
+This application is deployed to Heroku.com. Here is a link to the deployed website. [Heroku](https://sheltered-reaches-30407.herokuapp.com/)
 
-* Application loads with no errors
+The following image shows the deployed HTML’s appearance: ![Homepage](./assets/tech-blog-homepage.png)
 
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+If you have any questions about the repo, open an issue or contact me directly at naraamtm@gmail.com. Here is a link to this application repo on [GitHub](https://github.com/Nara1469/text-editor-PWA-nara).
